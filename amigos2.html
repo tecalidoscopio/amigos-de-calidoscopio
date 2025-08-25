@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amigos de Calidoscopio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+      color: #333;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff3b30, #ffcc00);
+      color: white;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    header img {
+      max-width: 180px;
+      margin-bottom: 20px;
+    }
+
+    .header-social {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .header-social a{
+        text-decoration: none;
+    }
+
+    .header-social a img {
+      width: 28px;
+      height: 28px;
+      margin-left: 10px;
+      vertical-align: middle;
+      transition: transform 0.3s;
+    }
+
+    .header-social a img:hover {
+      transform: scale(1.2);
+    }
+
+
+/* Posiciona el video en la esquina superior derecha del header */
+.video-container {
+  position: absolute;
+  top: 20px; /* Distancia desde la parte superior */
+  left: 20px; /* Distancia desde la derecha */
+  width: 350px; /* Ancho del video. Puedes cambiarlo */
+  height: 197px; /* Alto del video (aproximadamente 16:9). Puedes ajustarlo */
+  z-index: 10; /* Asegura que el video esté por encima de otros elementos */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* El iframe se estira para llenar el contenedor */
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin: 30px 0 10px;
+      color: #c62828;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 0 auto 20px;
+      padding: 0 20px;
+    }
+
+    .button-container {
+      margin: 40px 0;
+    }
+
+    .blue-button {
+      background-color: #3483FA;
+      color: white;
+      padding: 14px 28px;
+      text-decoration: none;
+      border-radius: 6px;
+      display: inline-block;
+      font-size: 18px;
+      transition: background-color 0.3s;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+    }
+
+    .blue-button:hover {
+      background-color: #2a68c8;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin: 40px auto;
+      max-width: 1000px;
+      padding: 0 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.5s;
+    }
+
+    .gallery img:hover{
+        transform: scale(1.4);
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    .social a img {
+      width: 28px;
+      height: 28px;
+      margin: 0 8px;
+      vertical-align: middle;
+      transition: transform 0.3s;
+    }
+
+    .social a img:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+
+          <div class="video-container">
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/Ucm3gOGxXtE?si=hGfNWYfYHuCcRFuo" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+  </div>
+
+    <div class="header-social">
+        <a href="https://www.instagram.com/asociacion_civil_calidoscopio" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/p/Asociaci%C3%B3n-Civil-Calidoscopio-100051182305295/?locale=es_LA" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+      </a>
+      <a href="https://wa.me/5491158121927" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Whatsapp_logo_2022.jpg" alt="WhatsApp">
+      </a>
+    </div>
+    <img src="imagenes web/amigos sin fondo.png" alt="Logo Amigos de Calidoscopio">
+    <h1>Amigos de Calidoscopio</h1>
+    <p>Unite a nuestro programa de suscripción mensual y ayudanos a sostener el trabajo con personas con discapacidad.</p>
+
+  </header>
+
+  <section>
+    <h2>Emergencia en Discapacidad en Argentina</h2>
+    <p>En los últimos años, los recortes en salud y discapacidad en Argentina han puesto en riesgo la continuidad de organizaciones comunitarias que, como <strong>Calidoscopio</strong>, acompañan día a día a personas con discapacidad intelectual. 
+    Tu apoyo es fundamental para que podamos seguir brindando contención, actividades y espacios de inclusión.</p>
+  </section>
+
+  <div class="button-container">
+    <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380849817d4a301981dd4e813024b" 
+       name="MP-payButton" class='blue-button'>Suscribirme</a>
+  </div>
+
+  <section class="gallery">
+    <img src="imagenes web/portada.jpg" alt="Foto grupo Calidoscopio">
+    <img src="imagenes web/QR AMIGOS diseño.png" alt="Actividad en Calidoscopio">
+    <img src="imagenes web/sogas.jpg" alt="Código QR suscripción">
+  </section>
+
+  <footer>
+    <p>© 2025 Asociación Civil Calidoscopio - Todos los derechos reservados</p>
+    <div class="social">
+      <a href="https://www.instagram.com/asociacion_civil_calidoscopio" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/p/Asociaci%C3%B3n-Civil-Calidoscopio-100051182305295/?locale=es_LA" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+      </a>
+      <a href="https://wa.me/5491158121927" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Whatsapp_logo_2022.jpg" alt="WhatsApp">
+      </a>
+    </div>
+  </footer>
+
+  <script type="text/javascript">
+    (function() {
+      function $MPC_load() {
+        window.$MPC_loaded !== true && (function() {
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js";
+          var x = document.getElementsByTagName('script')[0];
+          x.parentNode.insertBefore(s, x);
+          window.$MPC_loaded = true;
+        })();
+      }
+      window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;
+    })();
+  </script>
+</body>
+</html>
